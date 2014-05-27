@@ -79,7 +79,7 @@ nav ul li a:hover {
 	height: 280px;
 }
 .container_section_info p {
-	float: right;
+	/*float: right;*/
 	margin: 0 auto;
 	max-width: 800px;
 	padding-top: 100px;
@@ -89,12 +89,18 @@ nav ul li a:hover {
 	color: #699;
 }
 .container_section_footer {
+	position: relative;
 	text-align: center;
 	height: 60px;
 	background-color: #6f88c0;
 }
-.container_section_footer a {
-	margin-top: 10px;
+.container_section_footer_button_container {
+	position: absolute;
+	top: 17%;
+	left: 34%;
+}
+.container_section_footer_button_container a {
+	/*margin-top: 10px;*/
 }
 .button {
 	text-decoration: none;
