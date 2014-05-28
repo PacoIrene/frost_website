@@ -118,3 +118,7 @@ nav ul li a:hover {
 	text-shadow: 0 1px 3px rgba(0,0,0,0.3);
 	box-shadow: 0 4px 4px rgba(0,0,0,0.2);
 }
+
+div.gist-meta {
+	display: none;
+}
