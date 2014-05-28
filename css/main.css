@@ -122,3 +122,6 @@ nav ul li a:hover {
 div.gist-meta {
 	display: none;
 }
+.line-numbers {
+	display: none;
+}
