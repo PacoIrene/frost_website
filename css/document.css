@@ -1,0 +1,47 @@
+div.gist-meta {
+	display: none;
+}
+.line-numbers {
+	display: none;
+}
+
+.container {
+	width: 950px;
+	margin: 0 auto;
+	margin-top: 40px;
+}
+
+.container_chart {
+	margin-top: 40px;
+}
+.container_chart h2 {
+	font-size: 30px;
+	color: #fafafa;
+	padding: 10px;
+	background-color: #6f88c0;
+	border-radius: 8px;
+	margin-bottom: 20px;
+}
+.container_chart_list li {
+	list-style: none;
+	padding: 10px;
+	border-top: 1px solid #dedede;
+}
+.container_chart_list li p {
+	color: #585858;
+	margin: 0 0 0.4em 0;
+}
+.chartAndCode {
+	min-height: 250px;
+}
+.chartAndCode_chart {
+	width: 300px;
+	height: 200px;
+	position: absolute;
+}
+.chartAndCode_code {
+	width: 600px;
+	margin-left: 330px;
+	font-size: 14px;
+}
+
