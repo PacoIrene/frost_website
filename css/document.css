@@ -21,6 +21,7 @@ div.gist-meta {
 	background-color: #6f88c0;
 	border-radius: 8px;
 	margin-bottom: 20px;
+	cursor: pointer;
 }
 .container_chart_list li {
 	list-style: none;
