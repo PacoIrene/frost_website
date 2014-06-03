@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8"/>
+		<title>Arc</title>
+		<link rel="stylesheet" type="text/css" href="css/frost.css">
+	</head>
+	<body>
+		<div id="node"></div>
+		<script type="text/javascript" src="lib/d3.v3.min.js"></script>
+		<script type="text/javascript" src="lib/frost.min.js" charset="utf-8"></script>
+		<script type="text/javascript">
+			var frost = new Frost.Graph({
+				element: "#node",
+				width: 500,
+				height: 300,
+				type: "arc",
+				series: [
+				{
+					data: [
+						{value: 10,name: "Jan"},
+						{value: 11,name: "Feb"}, 
+						{value: 13,name: "Mar"},
+						{value: 15,name: "Apr"},
+						{value: 18,name: "May"},
+						{value: 28,name: "Jun"},
+						{value: 14,name: "Jul"},
+						{value: 6,name: "Aug"},
+						{value: 3,name: "Sep"},
+						{value: 2,name: "Oct"},
+						{value: 1,name: "Nov"},
+						{value: 2,name: "Dec"},
+					],
+					name: "Country"
+				}],
+				xAxis: true,
+				yAxis: true,
+				legend: true,
+				hasDetail: true
+			});
+			frost.render();
+		</script>
+	</body>
+</html>

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8"/>
+		<title>Force Layout</title>
+		<link rel="stylesheet" type="text/css" href="css/frost.css">
+	</head>
+	<body>
+		<div id="node"></div>
+		<script type="text/javascript" src="lib/d3.v3.min.js"></script>
+		<script type="text/javascript" src="lib/frost.min.js" charset="utf-8"></script>
+		<script type="text/javascript">
+			var frost = new Frost.Graph({
+				element: "#node",
+				width: 500,
+				height: 300,
+				type: "force",
+				series: [
+				{
+					color: "#9ecae1",
+					data: [
+						{name: "a1", value: 1},
+						{name: "b1", value: 2},
+						{name: "c1", value: 3},
+						{name: "d1", value: 4},
+						{name: "e1", value: 4},
+						{name: "f1", value: 4},
+						{name: "g1", value: 4},
+						{name: "h1", value: 4}
+					],
+					name: "Group1"
+				},
+				{
+					color: '#bbe468',
+					data: [
+						{name: "a2", value: 2},
+						{name: "b2", value: 4},
+						{name: "c2", value: 6},
+						{name: "d2", value: 8}
+					],
+					name: "Group2"
+				},
+				{
+					color: "#6bafd6",
+					data: [
+						{name: "a2", value: 2},
+						{name: "b2", value: 4},
+						{name: "c2", value: 6},
+						{name: "d2", value: 8}
+					],
+					name: "Group3"
+				},
+				{
+					color: '#92875a',
+					data: [
+						{name: "a2", value: 2},
+						{name: "b2", value: 4},
+						{name: "c2", value: 6},
+						{name: "d2", value: 8}
+					],
+					name: "Group4"
+				},
+				{
+					color: '#ecb796',
+					data: [
+						{name: "a3", value: 3},
+						{name: "b3", value: 6},
+						{name: "c3", value: 9},
+						{name: "d3", value: 12}
+					],
+					name: "Group5"
+				}],
+				xAxis: true,
+				yAxis: true,
+				legend: true,
+				hasDetail: true
+			});
+			frost.render();
+		</script>
+	</body>
+</html>

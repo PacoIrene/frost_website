@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8"/>
+		<title>Pie</title>
+		<link rel="stylesheet" type="text/css" href="css/frost.css">
+	</head>
+	<body>
+		<div id="node"></div>
+		<script type="text/javascript" src="lib/d3.v3.min.js"></script>
+		<script type="text/javascript" src="lib/frost.js" charset="utf-8"></script>
+		<script type="text/javascript">
+			var frost = new Frost.Graph({
+				element: "#node",
+				width: 500,
+				height: 300,
+				type: "pie",
+				series: [
+				{
+					data: [
+						{value: 10,name: "王伟"},
+						{value: 11,name: "李卫"}, 
+						{value: 13,name: "孙伟"},
+	 					{value: 15,name: "张伟"},
+						{value: 18,name: "孙平"}
+					],
+					name: "Country"
+				}],
+				xAxis: true,
+				yAxis: true,
+				legend: true,
+				hasDetail: true
+			});
+			frost.render();
+		</script>
+	</body>
+</html>

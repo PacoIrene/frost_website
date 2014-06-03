@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8"/>
+		<title>Bubble</title>
+		<link rel="stylesheet" type="text/css" href="css/frost.css">
+	</head>
+	<body>
+		<div id="node"></div>
+		<script type="text/javascript" src="lib/d3.v3.min.js"></script>
+		<script type="text/javascript" src="lib/frost.min.js" charset="utf-8"></script>
+		<script type="text/javascript">
+			var frost = new Frost.Graph({
+				element: "#node",
+				width: 800,
+				height: 600,
+				type: "bubble",
+				series: [
+				{
+					color: "#9ecae1",
+					data: [
+						{name: "a", value: 1},
+						{name: "b", value: 2},
+						{name: "c", value: 3},
+						{name: "d", value: 4}
+					],
+					name: "Group1"
+				},
+				{
+					color: '#bbe468',
+					data: [
+						{name: "a", value: 12},
+						{name: "b", value: 17},
+						{name: "c", value: 7},
+						{name: "d", value: 3}
+					],
+					name: "Group2"
+				},
+				{
+					color: "#6bafd6",
+					data: [
+						{name: "a", value: 2},
+						{name: "b", value: 10},
+						{name: "c", value: 3},
+						{name: "d", value: 9}
+					],
+					name: "Group3"
+				},
+				{
+					color: '#92875a',
+					data: [
+						{name: "a", value: 2},
+						{name: "b", value: 4},
+						{name: "c", value: 6},
+						{name: "d", value: 8}
+					],
+					name: "Group4"
+				},
+				{
+					color: '#ecb796',
+					data: [
+						{name: "a", value: 3},
+						{name: "b", value: 6},
+						{name: "c", value: 9},
+						{name: "d", value: 12}
+					],
+					name: "Group5"
+				}],
+				xAxis: true,
+				yAxis: true,
+				legend: true,
+				hasDetail: true,
+				hasContent: false
+			});
+			frost.render();
+		</script>
+	</body>
+</html>

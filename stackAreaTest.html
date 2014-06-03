@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8"/>
+		<title>StackArea</title>
+		<link rel="stylesheet" type="text/css" href="css/frost.css">
+	</head>
+	<body>
+		<div id="node"></div>
+		<script type="text/javascript" src="lib/d3.v3.min.js"></script>
+		<script type="text/javascript" src="lib/frost.min.js" charset="utf-8"></script>
+		<script type="text/javascript">
+			var frost = new Frost.Graph({
+				element: "#node",
+				width: 500,
+				height: 300,
+				type: "area",
+				stack: true,
+				isXLinear: true,
+				lineType: "monotone",
+				series: [
+				{
+					color: "#9ecae1",
+					data: [
+						{name: "a", value: 33},
+						{name: "b", value: 32},
+						{name: "c", value: 20},
+						{name: "d", value: 45}
+					],
+					name: "Group1"
+				},{
+					color: "#6bafd6",
+					data: [
+						{name: "a", value: 22},
+						{name: "b", value: 11},
+						{name: "c", value: 8},
+						{name: "d", value: 42}
+					],
+					name: "Group2"
+				},{
+					color: "#3283bd",
+					data: [
+						{name: "a", value: 34},
+						{name: "b", value: 46},
+						{name: "c", value: 43},
+						{name: "d", value: 70}
+					],
+					name: "Group3"
+				}],
+				xAxis: true,
+				yAxis: true,
+				legend: true
+			});
+			frost.render();
+		</script>
+	</body>
+</html>

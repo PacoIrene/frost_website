@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8"/>
+		<title>Line</title>
+		<link rel="stylesheet" type="text/css" href="css/frost.css">
+	</head>
+	<body>
+		<div id="node"></div>
+		<script type="text/javascript" src="lib/d3.v3.min.js"></script>
+		<script type="text/javascript" src="lib/frost.min.js" charset="utf-8"></script>
+		<script type="text/javascript">
+			var frost = new Frost.Graph({
+				element: "#node",
+				width: 500,
+				height: 300,
+				type: "line",
+				lineType: "linear",
+				isXLinear: false,
+				series: [
+				{
+					color: "steelblue",
+					data: [
+						{x: 0, value: 10,name: "一月"},
+						{x: 1, value: 13,name: "二月"}, 
+						{x: 2, value: 18,name: "三月"},
+	 					{x: 3, value: 24,name: "四月"},
+						{x: 4, value: 30,name: "五月"},
+					],
+					name: "Country"
+				},
+				{
+					color: "lightblue",
+					data: [
+						{x: 0, value: 8,name: "一月"},
+						{x: 1, value: 12,name: "二月"}, 
+						{x: 2, value: 18,name: "三月"},
+	 					{x: 3, value: 27,name: "四月"},
+						{x: 4, value: 38,name: "五月"},
+					],
+					name: "Village"
+				}
+				],
+				xAxis: true,
+				yAxis: true,
+				legend: true,
+				hasStandard: true,
+			});
+			frost.render();
+		</script>
+	</body>
+</html>
