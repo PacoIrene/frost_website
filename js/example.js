@@ -1,5 +1,5 @@
-var fiveShootGoal = new Frost.Graph({
-	element: "#fiveShootGoal",
+var fiveInOut = new Frost.Graph({
+	element: "#fiveInOut",
 	width: 480,
 	height: 300,
 	type: "bar",
@@ -59,9 +59,9 @@ var fiveShootGoal = new Frost.Graph({
 	yAxis: true,
 	legend: true,
 });
-fiveShootGoal.render();
-var fiveInOut = new Frost.Graph({
-	element: "#fiveInOut",
+fiveInOut.render();
+var fiveShootGoal = new Frost.Graph({
+	element: "#fiveShootGoal",
 	width: 480,
 	height: 300,
 	type: "bar",
@@ -121,7 +121,7 @@ var fiveInOut = new Frost.Graph({
 	yAxis: true,
 	legend: true
 });
-fiveInOut.render();
+fiveShootGoal.render();
 var manCityPlayerGoal = new Frost.Graph({
 	element: "#manCityPlayerGoal",
 	width: 470,
