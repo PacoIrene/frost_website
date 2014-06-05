@@ -22,18 +22,25 @@
 		<div class="container">
 			<div class="container_singleExample">
 				<div class="container_singleExample_header">
-					<div class="headImg">
-						<img src="img/ronaldo.jpg">
+					<div class="headImg headImg_club">
+						<img src="img/arsenal.jpg">
 					</div>
 					<div class="headVS">
-						<span>VS</span>
+						<span>Buy?</span>
 					</div>
-					<div class="headImg">
-						<img src="img/messi.jpg">
+					<div class="headImg headImg_player">
+						<img src="img/fabregas.jpg">
 					</div>
 				</div>
-				<div id="ranaldoAndMessi">
-					
+				<div class="container_singleExample_content">
+					<div id="container_IsNeed">
+						<h2>Does Arsenal really need Fabregas?</h2>
+						<div class="chartContainer">
+							<div id="fiveInOut">
+							</div>
+							<div id="goalPlayer"></div>
+						</div>
+					</div>
 				</div>
 			</div>
 		</div>
@@ -43,42 +50,6 @@
 		<script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
 		<script type="text/javascript" src="lib/d3.v3.min.js"></script>
 		<script type="text/javascript" src="lib/frost.js"></script>
-		<script type="text/javascript">
-			var frost = new Frost.Graph({
-				element: "#ranaldoAndMessi",
-				width: 800,
-				height: 600,
-				type: "bar",
-				stack: true,
-				barType: 2,
-				series: [
-				{
-					color: "lightblue",
-					data: [
-						{value: 10,name: "Jan"},
-						{value: 13,name: "Feb"}, 
-						{value: 10,name: "Mar"},
-						{value: 40,name: "Apr"},
-						{value: 13,name: "May"},
-					],
-					name: "Country"
-				},
-				{
-					color: 'steelblue',
-					data: [
-						{value: 6,name: "Jan"},
-						{value: 20,name: "Feb"}, 
-						{value: 33,name: "Mar"},
-						{value: 50,name: "May"}
-					],
-					name: "Village"
-				}],
-				hasDetail: true,
-				xAxis:true,
-				yAxis: true,
-				legend: true
-			});
-			frost.render();
-		</script>
+		<script type="text/javascript" src="js/example.js"></script>
 	</body>
 </html>
