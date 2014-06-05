@@ -35,27 +35,46 @@
 }
 .container_singleExample_content {
 	margin-top: 20px;
-	padding-top: 40px;
+	padding-top: 30px;
 	border-top: 1px solid #e0e0e0;
 }
 #container_IsNeed h2 {
 	font-size: 20px;
 	letter-spacing: -1px;
 	font-weight: normal;
+	margin-bottom: 15px;
 }
-.chartContainer {
+.chartContainer, .chartDetail {
 	width: 960px;
 	display: box;
 	display: -moz-box;
 	display: -webkit-box;
 }
-#fiveInOut {
-	box-flex: 5;
-	-webkit-box-flex: 5;
-	-moz-box-flex: 5;
+.column8flow{
+	box-flex: 1;
+	-webkit-box-flex: 1;
+	-moz-box-flex: 1;
 }
-#goalPlayer {
-	box-flex: 4;
-	-webkit-box-flex: 4;
-	-moz-box-flex: 4;
+.chartDetail {
+	margin-top: 10px;
+	margin-bottom: 30px;
+	padding-bottom: 10px;
+	border-bottom: 1px solid #e0e0e0;
+}
+.chartDetail p {
+	text-align: center;
+}
+.teamLogo {
+	padding: 0;
+	border: none;
+}
+.teamLogo p {
+	text-align: left;
+}
+.teamLogo p img {
+	height: 60px;
+	width: 60px;
+}
+#manCityPlayerGoal, #cheiseaPlayerGoal {
+	margin-right: 20px;
 }
