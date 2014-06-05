@@ -6,6 +6,7 @@
 		<link rel="stylesheet" type="text/css" href="css/main.css">
 		<link rel="stylesheet" type="text/css" href="css/example.css">
 		<link rel="stylesheet" type="text/css" href="css/frost.css">
+		<link href="img/bitbug_favicon.ico" rel="shortcut icon" />
 	</head>
 	<body>
 		<div class="top_linear"></div>
@@ -42,5 +43,42 @@
 		<script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
 		<script type="text/javascript" src="lib/d3.v3.min.js"></script>
 		<script type="text/javascript" src="lib/frost.js"></script>
+		<script type="text/javascript">
+			var frost = new Frost.Graph({
+				element: "#ranaldoAndMessi",
+				width: 800,
+				height: 600,
+				type: "bar",
+				stack: true,
+				barType: 2,
+				series: [
+				{
+					color: "lightblue",
+					data: [
+						{value: 10,name: "Jan"},
+						{value: 13,name: "Feb"}, 
+						{value: 10,name: "Mar"},
+						{value: 40,name: "Apr"},
+						{value: 13,name: "May"},
+					],
+					name: "Country"
+				},
+				{
+					color: 'steelblue',
+					data: [
+						{value: 6,name: "Jan"},
+						{value: 20,name: "Feb"}, 
+						{value: 33,name: "Mar"},
+						{value: 50,name: "May"}
+					],
+					name: "Village"
+				}],
+				hasDetail: true,
+				xAxis:true,
+				yAxis: true,
+				legend: true
+			});
+			frost.render();
+		</script>
 	</body>
 </html>
