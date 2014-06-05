@@ -69,7 +69,7 @@ var fiveInOut = new Frost.Graph({
 	barType: 1,
 	series: [
 	{
-		color: "#589400",
+		color: "#cc7a6f",
 		data: [{
 			value: 37,
 			name: "Goal Loose"
@@ -79,7 +79,7 @@ var fiveInOut = new Frost.Graph({
 		}],
 		name: "Man City"
 	},{
-		color: "#0066cc",
+		color: "#6f88c0",
 		data: [{
 			value: 50,
 			name: "Goal Loose"
