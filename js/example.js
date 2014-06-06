@@ -1,3 +1,4 @@
+/*! Float.js 0.1.2 2014-06-06 */
 var fiveInOut = new Frost.Graph({
 	element: "#fiveInOut",
 	width: 480,

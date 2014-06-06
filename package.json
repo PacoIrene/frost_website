@@ -1,0 +1,11 @@
+{
+	"name": "Frost.js",
+	"version": "0.0.1",
+	"private": true,
+	"dependencies": {
+    "grunt": "*",
+    "grunt-contrib-jshint": "*",
+    "grunt-contrib-uglify": "*",
+    "grunt-contrib-concat": "*"
+  }
+}

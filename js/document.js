@@ -1,3 +1,4 @@
+/*! Float.js 0.1.2 2014-06-06 */
 var frost = new Frost.Graph({
 	element: "#standardBarChart",
 	width: 300,
