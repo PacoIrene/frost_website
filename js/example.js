@@ -7,7 +7,7 @@ var fiveInOut = new Frost.Graph({
 	barType: 1,
 	series: [
 	{
-		color: "#589400",
+		color: "#cc7a6f",
 		data: [{
 			value: 102,
 			name: "Goal"
@@ -17,7 +17,7 @@ var fiveInOut = new Frost.Graph({
 		}],
 		name: "Man City"
 	},{
-		color: "#0066cc",
+		color: "#6f88c0",
 		data: [{
 			value: 101,
 			name: "Goal"
@@ -173,7 +173,7 @@ var liverpoolPlayerGoal = new Frost.Graph({
 			{value: 7,name: "Skrtel"},
 			{value: 1,name: "Flanagan"}
 		],
-		name: "Man City"
+		name: "Liverpool"
 	}],
 	hasDetail: true,
 	hasContent: false,
@@ -184,7 +184,7 @@ var cheiseaPlayerGoal = new Frost.Graph({
 	element: "#cheiseaPlayerGoal",
 	width: 470,
 	height: 300,
-	type: "pie",
+	type: "arc",
 	series: [
 	{
 		data: [
@@ -203,7 +203,7 @@ var cheiseaPlayerGoal = new Frost.Graph({
 			{value: 3,name: "Terry"},
 			{value: 9,name: "Eto'o"}
 		],
-		name: "Country"
+		name: "Cheisea"
 	}],
 	hasDetail: true,
 	hasContent: false,
@@ -214,7 +214,7 @@ var arsenalPlayerGoal = new Frost.Graph({
 	element: "#arsenalPlayerGoal",
 	width: 470,
 	height: 300,
-	type: "pie",
+	type: "arc",
 	series: [
 	{
 		data: [
@@ -235,10 +235,192 @@ var arsenalPlayerGoal = new Frost.Graph({
 			{value: 2,name: "Bendtner"},
 			{value: 1,name: "Gnabry"}
 		],
-		name: "Country"
+		name: "Arsenal"
 	}],
 	hasDetail: true,
 	hasContent: false,
 	legend:true
 });
 arsenalPlayerGoal.render();
+
+var allTeamGoalPlayer = new Frost.Graph({
+	element: "#allTeamGoalPlayer",
+	width: 500,
+	height: 300,
+	type: "force",
+	series: [
+	{
+		color: "#7bb0d8",
+		data: [
+			{value: 3,name: "Kompany"},
+			{value: 1,name: "Zabaleta"}, 
+			{value: 1,name: "Milner"},
+			{value: 6,name: "Nasri"},
+			{value: 9,name: "Negredo"},
+			{value: 16,name: "Dzeko"},
+			{value: 1,name: "Kolarov"},
+			{value: 4,name: "Navas"},
+			{value: 17,name: "Aguero"},
+			{value: 7,name: "Silva"},
+			{value: 5,name: "Fernandinho"},
+			{value: 2,name: "Demichelis"},
+			{value: 3,name: "Jovetic"},
+			{value: 20,name: "Toure"}
+		],
+		name: "Man City"
+	},{
+		color: "#de0120",
+		data: [
+			{value: 1,name: "Agger"},
+			{value: 31,name: "Suarez"}, 
+			{value: 13,name: "Gerrard"},
+			{value: 5,name: "Coutinho"},
+			{value: 1,name: "Moses"},
+			{value: 4,name: "Henderson"},
+			{value: 21,name: "Sturridge"},
+			{value: 1,name: "Sakho"},
+			{value: 1,name: "Allen"},
+			{value: 9,name: "Sterling"},
+			{value: 7,name: "Skrtel"},
+			{value: 1,name: "Flanagan"}
+		],
+		name: "Liverpool"
+	},{
+		color: "#0248b7",
+		data: [
+			{value: 3,name: "Ivanovic"},
+			{value: 1,name: "Ramires"}, 
+			{value: 5,name: "Lampard"},
+			{value: 4,name: "Torres"},
+			{value: 8,name: "Oscar"},
+			{value: 1,name: "Mikel"},
+			{value: 7,name: "Schurrle"},
+			{value: 2,name: "Salah"},
+			{value: 14,name: "Hazard"},
+			{value: 5,name: "Demba Ba"},
+			{value: 4,name: "Willian"},
+			{value: 1,name: "Cahill"},
+			{value: 3,name: "Terry"},
+			{value: 9,name: "Eto'o"}
+		],
+		name: "Cheisea"
+	},{
+		color: "#b91439",
+		data: [
+			{value: 1,name: "Sagna"},
+			{value: 2,name: "Mertesacker"}, 
+			{value: 2,name: "Koscielny"},
+			{value: 2,name: "Rosicky"},
+			{value: 2,name: "Arteta"},
+			{value: 8,name: "Podolski"},
+			{value: 3,name: "Wilshere"},
+			{value: 5,name: "Ozil"},
+			{value: 16,name: "Giroud"},
+			{value: 5,name: "Walcott"},
+			{value: 2,name: "Chamberlain"},
+			{value: 9,name: "Ramsey"},
+			{value: 4,name: "Cazorla"},
+			{value: 2,name: "Flamini"},
+			{value: 2,name: "Bendtner"},
+			{value: 1,name: "Gnabry"}
+		],
+		name: "Arsenal"
+	},],
+	hasDetail: true,
+	hasContent: false,
+	legend:true
+});
+allTeamGoalPlayer.render();
+
+var keyPlayerGoal = new Frost.Graph({
+	element: "#keyPlayerGoal",
+	width: 330,
+	height: 180,
+	type: "bar",
+	series: [
+	{
+		color: "#7bb0d8",
+		data: [
+			{value: 8,name: "Fabregas"},
+			{value: 5,name: "Özil"}, 
+			{value: 13,name: "Gerrard"},
+			{value: 5,name: "Lampard"}
+		],
+		name: "Goal"
+	}],
+	hasDetail: true,
+	xAxis: true,
+	yAxis: true,
+	legend:false,
+	hasContent: true
+});
+keyPlayerGoal.render();
+var keyPlayerAssist = new Frost.Graph({
+	element: "#keyPlayerAssist",
+	width: 330,
+	height: 180,
+	type: "bar",
+	series: [
+	{
+		color: "#de0120",
+		data: [
+			{value: 13,name: "Fabregas"},
+			{value: 9,name: "Özil"}, 
+			{value: 14,name: "Gerrard"},
+			{value: 4,name: "Lampard"}
+		],
+		name: "Goal"
+	}],
+	hasDetail: true,
+	xAxis: true,
+	yAxis: true,
+	legend:false,
+	hasContent: true
+});
+keyPlayerAssist.render();
+var keyPlayerKeyPass = new Frost.Graph({
+	element: "#keyPlayerKeyPass",
+	width: 330,
+	height: 180,
+	type: "bar",
+	series: [
+	{
+		color: "#b91439",
+		data: [
+			{value: 58,name: "Fabregas"},
+			{value: 76,name: "Özil"}, 
+			{value: 69,name: "Gerrard"},
+			{value: 35,name: "Lampard"}
+		],
+		name: "Goal"
+	}],
+	hasDetail: true,
+	xAxis: true,
+	yAxis: true,
+	legend:false,
+	hasContent: true
+});
+keyPlayerKeyPass.render();
+var keyPlayerSteals = new Frost.Graph({
+	element: "#keyPlayerSteals",
+	width: 330,
+	height: 180,
+	type: "bar",
+	series: [
+	{
+		color: "#0248b7",
+		data: [
+			{value: 44,name: "Fabregas"},
+			{value: 22,name: "Özil"}, 
+			{value: 98,name: "Gerrard"},
+			{value: 44,name: "Lampard"}
+		],
+		name: "Goal"
+	}],
+	hasDetail: true,
+	xAxis: true,
+	yAxis: true,
+	legend:false,
+	hasContent: true
+});
+keyPlayerSteals.render();

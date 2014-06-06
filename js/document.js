@@ -15,7 +15,8 @@ var frost = new Frost.Graph({
 		],
 		name: "Country"
 	}],
-	hasDetail: true
+	hasDetail: true,
+	hasContent: true
 });
 frost.render();
 
@@ -196,7 +197,8 @@ var frost = new Frost.Graph({
 		],
 		name: "Country"
 	}],
-	hasDetail: true
+	hasDetail: true,
+	hasContent: true
 });
 frost.render();
 var frost = new Frost.Graph({
