@@ -1,3 +1,4 @@
+/*! Frost_Website 0.0.1 2014-06-06 */
 /*! Float.js 0.1.2 2014-06-06 */
 var frost = new Frost.Graph({
 	element: "#standardBarChart",

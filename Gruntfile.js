@@ -7,11 +7,11 @@ module.exports = function(grunt) {
 			}, 
 			documentjs: {
 				src:['js/document.js'],
-				dest: 'build/document.js'
+				dest: 'js/document.js'
 			},
 			examplejs: {
 				src:['js/example.js'],
-				dest: 'build/example.js'
+				dest: 'js/example.js'
 			}
 		},
 		uglify: {
@@ -20,8 +20,8 @@ module.exports = function(grunt) {
 			}, 
 			static_mappings: {
 				files: [
-			        {src: 'build/document.js', dest: 'build/document.min.js'},
-			        {src: 'build/example.js', dest: 'build/example.min.js'}
+			        {src: 'js/document.js', dest: 'js/document.min.js'},
+			        {src: 'js/example.js', dest: 'js/example.min.js'}
 			    ]
 			}
 		}
